@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
+
+h2 {
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    font-weight: 500;
+    font: 'Arimo';
+    width: 650px;
+    height: 22px;
+}
+
+#divider {
+    height: 0;
+    border-top: 2px dotted #ccc;
+    margin: 36px 0 28px 0;
+    justify-self: center;
+}
