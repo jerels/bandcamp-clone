@@ -4,6 +4,7 @@ import { login } from '../store/auth';
 import { Redirect } from 'react-router-dom';
 import { AuthSubmitButton } from './auth/AuthSubmitButton';
 import '../css/LoginPage.css';
+import DemoButton from './auth/DemoButton';
 
 
 
@@ -47,6 +48,8 @@ const LoginPage = () => {
                 <br />
                 <AuthSubmitButton />
             </form>
+            <br />
+            <DemoButton />
         </>
     )
 };
