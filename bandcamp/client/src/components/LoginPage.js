@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../store/auth';
 import { Redirect } from 'react-router-dom';
-import { Container } from '@material-ui/core';
 import { AuthSubmitButton } from './auth/AuthSubmitButton';
 import '../css/LoginPage.css';
+
+
 
 
 const LoginPage = () => {
@@ -21,7 +22,8 @@ const LoginPage = () => {
     if (currentUserId) return <Redirect to='/' />
 
     return (
-        <Container fixed maxWidth='sm'>
+        <>
+            <div id='header' />
             <h2>Log in</h2>
             <div id='divider' />
             <form onSubmit={handleSubmit}>
@@ -33,6 +35,7 @@ const LoginPage = () => {
                         value={username}
                         onChange={e => setUsername(e.target.value)} />
                 </label>
+                <br />
                 <label>
                     Password
                     <input
@@ -41,9 +44,10 @@ const LoginPage = () => {
                         value={password}
                         onChange={e => setPassword(e.target.value)} />
                 </label>
+                <br />
                 <AuthSubmitButton />
             </form>
-        </Container>
+        </>
     )
 };
 

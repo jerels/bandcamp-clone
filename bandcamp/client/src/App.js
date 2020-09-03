@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { CssBaseline } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import Pages from './pages/Pages';
 import { setUser } from './store/auth';
@@ -28,7 +27,6 @@ function App() {
 
   return (
     <>
-      <CssBaseline />
       <BrowserRouter>
         <Pages />
       </BrowserRouter>
